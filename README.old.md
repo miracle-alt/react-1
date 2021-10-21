@@ -19,6 +19,7 @@ Node.js + React + Webpack + Babel
 `https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=ru`
 проходим по ссылке и устанавливаем себе в браузер это расширение
 
+`npm start`
 ## Элементы реакт - прошлый век
 
 Создание элемента - это как в Js, создание узла (будущего тега) с указанием его и мени и свойств (будущих атрибутов)
