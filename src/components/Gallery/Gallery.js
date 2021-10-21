@@ -1,4 +1,7 @@
-export function Gallery() {
+export function Gallery({t, d, i}) {
+    // console.log(t);
+    // console.log(d);
+    // console.log(i);
     return (
         <section>
             <h2>Gallery</h2>
