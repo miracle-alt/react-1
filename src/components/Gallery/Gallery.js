@@ -1,16 +1,33 @@
-export function Gallery({t, d, i}) {
-    // console.log(t);
-    // console.log(d);
-    // console.log(i);
+import PropTypes from 'prop-types';
+import { GalleryItem } from '../GalleryItem/GalleryItem';
+
+export function Gallery({ d, i: arrayOfImages, children }) {
     return (
         <section>
-            <h2>Gallery</h2>
-            <p>Lorem 10</p>
+            {children}
+            <p>{d}</p>
             <ul>
-                <li>1</li>
+                {arrayOfImages.map(({source, id})=>{
+                    return (
+                    <GalleryItem source={source} id={id}/>
+                    )
+                })}
             </ul>
         </section>
     )
 }
 
+Gallery.defaultProps = {
+    d: 'Default text for description',
+}
 
+Gallery.propTypes = {
+    d: PropTypes.string,
+    arrayOfImages: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.string,
+            source: PropTypes.string,
+        }),
+    ),
+    children: PropTypes.arrayOf(PropTypes.element),
+}
