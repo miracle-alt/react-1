@@ -1,29 +1,28 @@
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
+import s from './Title.module.css'
 
-export function Title({value}) {
-    return <h2>{value}</h2>
+// создадим объект инлайн стилей
+const stylesForTitle = {
+  color: 'green',
+  textTransform: 'uppercase',
 }
 
-export default Title;
+const Title = ({ value }) => {
+  return (
+    <div className="titleWrapper">
+      <h2 className={s.title} style={stylesForTitle}>
+        {value}
+      </h2>
+    </div>
+  )
+}
+
+export default Title
 
 Title.defaultProps = {
-    value: 'title',
+  value: 'title',
 }
 
 Title.propTypes = {
-    value: PropTypes.string,
+  value: PropTypes.string,
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
