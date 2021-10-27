@@ -22,9 +22,7 @@ function App() {
     <div className="App">
       <h1>FE-35 Module 1</h1>
       <Hero />
-      <Button style={newStylesForBtn} id="bsBtn" variant="outline-success">
-        Success
-      </Button>
+      <Button style={newStylesForBtn} id="bsBtn" variant="outline-success">Success</Button>
       <section>
         <h2>Lesson 1</h2>
         <Gallery i={images}>

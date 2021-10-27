@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import { GalleryItem } from '../GalleryItem/GalleryItem'
 import styles from './Gallery.module.css'
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Styles = styled.div`
   .selector1 {
